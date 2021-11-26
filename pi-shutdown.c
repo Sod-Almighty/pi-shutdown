@@ -24,8 +24,9 @@ int main (int argc, char **argv)
 		if(digitalRead(PIN) == 0) {
 			printf("Shutting down...\n");
 			system("shutdown -h now");
+			break;
 		}
-		delay(1000);
+		delay(100);
 	}
 	while (1);
 }
